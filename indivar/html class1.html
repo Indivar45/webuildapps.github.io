@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+<head>
+<title></title>
+<style>
+.cities{background-color:black;color:white;margin:20px;padding:20px;}
+.center{text-align:center;}
+.main{text-align:center;background-color:yellow;color:black;margin:20px;padding:30px;}
+</style>
+</head>
+<body>
+<div class="cities center">
+<h2 class="is">Shimla</h2>
+<p>Shimla is capital of Himachal pradesh</p>
+</div>
+<div class="main">
+<h2 class="is">Ranchi</h2>
+<p>Ranchi is capital of Jharkhand</p>
+</div>
+<button onclick="myfunction()">hide element</button>
+<script>
+function myfunction()
+{
+var x=document.getElementByClassName("is");
+for(var i=0;i<x.length;i++){
+x[i].style.display="none";}
+}
+}
+</script>
+</body>
+</html>
